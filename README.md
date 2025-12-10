@@ -1,24 +1,33 @@
+# Joc i missatges per ràdio amb Micro:bit
 
-> Obre aquesta pàgina a [https://raimonizard.github.io/microbit-template-repo/](https://raimonizard.github.io/microbit-template-repo/)
+Permet **enviar missatges** i **jugar als daus** entre micro:bits utilitzant la ràdio.
 
-## Utilitza-ho com a extensió
+## Inici
 
-Aquest dipòsit es pot afegir com una **extensió** a MakeCode.
+En engegar el micro:bit es mostra un **cor**, indicant que està a punt.
+Els dispositius han d’estar al **mateix grup de ràdio (1)**.
 
-* obre [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* fes clic a **Projecte nou**
-* fes clic a **Extensions** sota el menú de la roda dentada
-* cercar **https://github.com/raimonizard/microbit-template-repo** i importar
+## Enviar un missatge (Botó A)
 
-## Edita aquest projecte
+Prem **A** per enviar el text **“Hola!!”**.
+El micro:bit mostra una icona de confirmació i s’esborra la pantalla.
 
-Per editar aquest repositori a MakeCode.
+## Jugar als daus (Botó B)
 
-* obre [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* fes clic a ** Importa** i després a ** Importa URL**
-* enganxa **https://github.com/raimonizard/microbit-template-repo** i clica importar
+Prem **B** per:
 
-#### Metadades (utilitzades per a la cerca, renderització)
+1. Generar un nombre aleatori del **1 al 6**.
+2. Enviar-lo per ràdio.
+3. Mostrar el teu resultat (**JO:**).
 
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+Quan rebi el número de l’altre micro:bit (**ELL:**), es compara:
+
+* Si el seu número és més alt → *has perdut*
+* Si és més baix → *has guanyat*
+* Si és igual → *empat*
+
+## Rebre missatges de text
+
+Si arriba un text per ràdio, el micro:bit el mostra directament a la pantalla.
+
+!(captura_c)[captura_c.png]
