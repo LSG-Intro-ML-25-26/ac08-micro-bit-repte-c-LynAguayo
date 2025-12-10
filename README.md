@@ -30,4 +30,4 @@ Quan rebi el número de l’altre micro:bit (**ELL:**), es compara:
 
 Si arriba un text per ràdio, el micro:bit el mostra directament a la pantalla.
 
-!(captura_c)[captura_c.png]
+![captura_c](captura_c.png)
