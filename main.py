@@ -1,7 +1,6 @@
 my_number = 0
 # configurar grup de radio
 radio.set_group(1)
-# inici
 basic.show_icon(IconNames.HEART)
 
 # boto A: enviar missatge de text
