@@ -22,3 +22,21 @@ input.onButtonPressed(Button.B, function on_button_pressed_b() {
     basic.pause(1000)
     basic.clearScreen()
 })
+//  rebre nombre i comparar
+radio.onReceivedNumber(function on_received_number(receivedNumber: number) {
+    //  mostrar nombre rebut
+    basic.showString("ELL:")
+    basic.showNumber(receivedNumber)
+    basic.pause(1000)
+    if (receivedNumber > my_number) {
+        basic.showIcon(IconNames.Sad)
+    } else if (receivedNumber < my_number) {
+        basic.showIcon(IconNames.Happy)
+    } else {
+        //  empat
+        basic.showIcon(IconNames.Meh)
+    }
+    
+    basic.pause(2000)
+    basic.clearScreen()
+})

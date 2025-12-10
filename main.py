@@ -26,3 +26,21 @@ def on_button_pressed_b():
     basic.pause(1000)
     basic.clear_screen()
 input.on_button_pressed(Button.B, on_button_pressed_b)
+
+# rebre nombre i comparar
+
+def on_received_number(receivedNumber):
+    # mostrar nombre rebut
+    basic.show_string("ELL:")
+    basic.show_number(receivedNumber)
+    basic.pause(1000)
+    if receivedNumber > my_number:
+        basic.show_icon(IconNames.SAD)
+    elif receivedNumber < my_number:
+        basic.show_icon(IconNames.HAPPY)
+    else:
+        # empat
+        basic.show_icon(IconNames.MEH)
+    basic.pause(2000)
+    basic.clear_screen()
+radio.on_received_number(on_received_number)
