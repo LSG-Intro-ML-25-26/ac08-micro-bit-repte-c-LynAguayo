@@ -44,3 +44,9 @@ def on_received_number(receivedNumber):
     basic.pause(2000)
     basic.clear_screen()
 radio.on_received_number(on_received_number)
+
+# rebre i mostrar text
+
+def on_received_string(receivedString):
+    basic.show_string(receivedString)
+radio.on_received_string(on_received_string)

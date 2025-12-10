@@ -40,3 +40,7 @@ radio.onReceivedNumber(function on_received_number(receivedNumber: number) {
     basic.pause(2000)
     basic.clearScreen()
 })
+//  rebre i mostrar text
+radio.onReceivedString(function on_received_string(receivedString: string) {
+    basic.showString(receivedString)
+})
